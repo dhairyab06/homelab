@@ -1,0 +1,11 @@
+layout:
+  - Media:
+  - Staging:
+  - Infrastructure:
+  - Utilities:
+  - Network Status:
+      style: row
+      columns: 1
+  - System Stats:
+      style: row
+      columns: 3

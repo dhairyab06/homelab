@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: docker.io/filebrowser/filebrowser:latest
+    container_name: filebrowser
+    user: "0:0"
+    ports:
+      - "8081:80"
+    volumes:
+      - /home/dhruv/Downloads:/srv/Downloads:z
+      - /home/dhruv/Pictures:/srv/Pictures:z
+      - /home/dhruv/Videos:/srv/Videos:z
+      
+      - /home/dhruv/homelab/filebrowser/filebrowser.db:/database/filebrowser.db:Z
+    restart: unless-stopped

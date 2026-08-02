@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
       - APP_KEY=base64:secret
-      - APP_URL=http://10.0.0.125:3003
+      - APP_URL=http://10.0.0.127:3003
       - SPEEDTEST_SCHEDULE=0 * * * *
     volumes:
       - /home/dhruv/homelab/speedtest-tracker:/config:Z

@@ -1,0 +1,8 @@
+services:
+  bentopdf:
+    image: ghcr.io/alam00000/bentopdf-simple:latest
+    container_name: bentopdf
+    restart: unless-stopped
+
+    ports:
+      - "3005:8080"

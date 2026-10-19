@@ -1,0 +1,14 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - WEB_UI_PORT=8080
+    volumes:
+      - /home/dhruv/qbittorrent/config:/config:Z
+      - /home/dhruv/qbittorrent/downloads:/downloads:Z
+    restart: unless-stopped

@@ -10,5 +10,5 @@ services:
       - WEB_UI_PORT=8080
     volumes:
       - /home/dhruv/qbittorrent/config:/config:Z
-      - /home/dhruv/qbittorrent/downloads:/downloads:Z
+      - /home/dhruv/qbittorrent/downloads:/downloads:z
     restart: unless-stopped
